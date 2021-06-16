@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="ImageReceiverRemoteCamera3">
+        <crown name="ImageReceiverRemoteCamera3">
+            <desc>user script</desc>
+            <serves>
+                <event name="OnNewPointCloud">
+                    <desc>New image received and processed to pointcloud</desc>
+                    <param name="images" type="object" multiplicity="[1+]" desc="images provided by the Camera"/>
+                    <param name="pointCloud" type="object" multiplicity="1" desc="pointcloud generated from the image"/>
+                    <param name="sensordata" type="object" multiplicity="+" alias="SensorData" desc="additional data belonging to the images"/>
+                </event>
+            </serves>
+        </crown>
+        <meta key="author">Andreas Richert</meta>
+        <meta key="version">1.0</meta>
+        <meta key="priority">high</meta>
+        <meta key="copy-protected">false</meta>
+        <meta key="read-protected">false</meta>
+        <entry path="scripts" default="receiver.lua"/>
+    </application>
+</manifest>
