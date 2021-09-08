@@ -1,20 +1,6 @@
 --[[----------------------------------------------------------------------------
 
-  Application Name: MultiPointCloudProcessing
-  
-  Summary:
-  Register to receiver apps for further processing of data. In this sample only the point cloud is displayed.
-  
-  Description:
-  Register to 4 different 'ImageReceiverRemoteCamera' Apps to do further processing with the point clouds calculated by these apps.
-  To do your own processing with the data just extend the provided functions.
-  
-  How to run:
-  Start by running the app (F5) or debugging (F7+F10).
-  Set a breakpoint on the first row inside the main function to debug step-by-step.
-  See the results in the different image viewer on the DevicePage.
-  
-  More Information:
+  Information:
   This App works only in combination with the other Apps. It's completly eventdriven and only reacts to the Receiver Apps
   If you want more or less receivers change the number in this App and the names of the Apps.
   

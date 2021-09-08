@@ -1,22 +1,6 @@
 --[[----------------------------------------------------------------------------
 
-  Application Name: ImageReceiverRemoteCamera3
-    
-  Summary:
-  Receiver App to receive images from a Visionary-S CX, process as point cloud and provide it as event
-  
-  Description:
-  Connect to the Visionary-S CX camera on the configured IP addresse via the network interface
-  and receive the images from it. Calculate the PointCloud out of the Z image and notify a Event
-  with the point cloud which can be handled in an other App.
-  
-  How to run:
-  Connect the Visionary-S CX camera to the Ethernet port of the SIM with the matching IP address.
-  Start by running the app (F5) or debugging (F7+F10).
-  Set a breakpoint on the first row inside the main function to debug step-by-step.
-  See the results in the different image viewer on the DevicePage.
-  
-  More Information:
+  Information:
   With this App standalone running you won't see anything.
   If you want more or less cameras connected duplicate this app or remove some.
   
