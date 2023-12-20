@@ -12,7 +12,7 @@
                 </event>
             </serves>
         </crown>
-        <meta key="author">Andreas Richert</meta>
+        <meta key="author">AppSpace Sample</meta>
         <meta key="version">1.0</meta>
         <meta key="priority">high</meta>
         <meta key="copy-protected">false</meta>

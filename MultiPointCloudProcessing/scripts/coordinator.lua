@@ -3,7 +3,7 @@
   Information:
   This App works only in combination with the other Apps. It's completly eventdriven and only reacts to the Receiver Apps
   If you want more or less receivers change the number in this App and the names of the Apps.
-  
+
 ------------------------------------------------------------------------------]]
 --Start of Global Scope---------------------------------------------------------
 -- set the wanted log level - default is WARNING
@@ -11,7 +11,7 @@ Log.setLevel("INFO")
 -- Variables, constants, serves etc. should be declared here.
 
 -- setup the 4 different viewers
-local viewers = 
+local viewers =
   { View.create("v1"),
     View.create("v2"),
     View.create("v3"),

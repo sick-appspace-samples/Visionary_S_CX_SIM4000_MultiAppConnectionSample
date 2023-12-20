@@ -21,7 +21,7 @@ cam:setIPAddress("192.168.1.10")
 -- generate point cloud converter for Planar conversion from Z image to point cloud
 local pc_converter = Image.PointCloudConversion.PlanarDistance.create()
 
--- function to connect to a camera and initialize the point cloud converter
+---function to connect to a camera and initialize the point cloud converter
 function main()
   -- connect to device
   if cam:connect() then
@@ -43,7 +43,8 @@ Script.register("Engine.OnStarted", main)
 -- count the received images per camera
 local imageCnt = 0
 
---@handleOnNewImageCam4(image[+]:Image, sensordata:SensorData)
+---@param image Image[]
+---@param sensordata SensorData
 local function handleOnNewImage(image, sensordata)
   -- calculate the point cloud and color it with the distance values
   local pointCloud = pc_converter:toPointCloud(image[1], image[1])  -- , _pixelRegion)
@@ -56,7 +57,7 @@ local function handleOnNewImage(image, sensordata)
   imageCnt = imageCnt + 1
 end
 
--- display the received and processed framerate
+---display the received and processed framerate
 function handleOnExpiredFPSCount()
   Log.info("fps of cam #2: " .. imageCnt/10)
   imageCnt = 0
